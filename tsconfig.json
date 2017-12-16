@@ -3,8 +3,11 @@
     "target": "es5",
     "module": "commonjs",
     "sourceMap": true,
-    "noImplicitAny": false,
-    "strictNullChecks": true
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noEmitOnError": true,
+    "noUnusedParameters": true,
+    "watch": true
   },
   "exclude": [
     "node_modules"

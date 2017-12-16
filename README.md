@@ -11,6 +11,8 @@
 
 > 🔥 React + Typescript Boilerplate to develop your own react components and reuse in another projects
 
+![React Typescript Component Development Kit](images/intro.jpg)
+
 ## Motivation
 Components are cool! We should use them everywhere. So, you expent time developing a lot of components and now you want to reuse them in another awesome project & all your projects need your components updated when a new feature is released (and you also need typechecking, tests, hot module replacement & all the good stuff).
 
