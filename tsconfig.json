@@ -7,7 +7,9 @@
     "strictNullChecks": true,
     "noEmitOnError": true,
     "noUnusedParameters": true,
-    "watch": true
+    "watch": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports" : false
   },
   "exclude": [
     "node_modules"
