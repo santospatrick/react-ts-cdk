@@ -16,13 +16,31 @@
 ## Motivation
 Components are cool! We should use them everywhere. So, you expent time developing a lot of components and now you want to reuse them in another awesome project & all your projects need your components updated when a new feature is released (and you also need typechecking, tests, hot module replacement & all the good stuff).
 
+## Directory Structure
+```
+.
+├── src
+|   └── components
+|       └── MyComponent                 # Your component
+|           ├── MyComponent.tsx         # Its JSX + Typescript file
+|           ├── MyComponent.story.tsx   # Storybook of your component
+|           ├── types.tsx               # Types for props
+|           └── tests.js                # Jest + Enzyme tests
+|       └── MyComponentX                # Another component X
+|       └── MyComponentY                # Another component Y
+|       └── MyComponentZ                # Another component Z
+|       └── stories.tsx                 # Storybook config file
+├── dist
+|    └── index.js                       # Exporting all Componentss
+```
+
 ## Features
-- [ ] React
-- [ ] Typescript
-- [ ] Storybook
+- [x] React
+- [x] Typescript
+- [x] Storybook
 - [ ] Jest
 - [ ] Enzyme
-- [ ] Webpack
+- [x] Webpack
 - [ ] Prettier
 
 ## Contributing
