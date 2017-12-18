@@ -35,12 +35,12 @@ Components are cool! We should use them everywhere. So, you expent time developi
 ```
 
 ## Features
-- [ ] React
-- [ ] Typescript
-- [ ] Storybook
+- [x] React
+- [x] Typescript
+- [x] Storybook
 - [ ] Jest
 - [ ] Enzyme
-- [ ] Webpack
+- [x] Webpack
 - [ ] Prettier
 
 ## Contributing
