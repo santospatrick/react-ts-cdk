@@ -41,7 +41,7 @@ Components are cool! We should use them everywhere. So, you expent time developi
 - [ ] Jest
 - [ ] Enzyme
 - [x] Webpack
-- [ ] Prettier
+- [x] Prettier
 
 ## Contributing
 
