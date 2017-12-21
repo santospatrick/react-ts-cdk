@@ -6,7 +6,7 @@ before_install:
 install:
   - yarn
 cache:
-  directories:
-    - "node_modules"
+  directories:
+    - "node_modules"
 script:
   - yarn test
