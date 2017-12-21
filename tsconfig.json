@@ -9,7 +9,7 @@
     "noUnusedParameters": true,
     "watch": true,
     "jsx": "react",
-    "allowSyntheticDefaultImports" : false
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
     "node_modules"
