@@ -22,10 +22,10 @@ Components are cool! We should use them everywhere. So, you expent time developi
 ├── src
 |   └── components
 |       └── MyComponent                 # Your component
-|           ├── MyComponent.tsx         # Its JSX + Typescript file
 |           ├── MyComponent.story.tsx   # Storybook of your component
-|           ├── types.tsx               # Types for props
-|           └── tests.js                # Jest + Enzyme tests
+|           ├── MyComponent.test.tsx    # Jest + Enzyme tests
+|           ├── MyComponent.tsx         # Its JSX + Typescript file
+|           └── types.ts                # Types for props
 |       └── MyComponentX                # Another component X
 |       └── MyComponentY                # Another component Y
 |       └── MyComponentZ                # Another component Z
