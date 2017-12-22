@@ -1,11 +1,17 @@
 # react-ts-cdk
 
-<p>
+<p align="center">
     <span>
-    <img alt="npm" src="https://img.shields.io/npm/v/npm.svg?style=flat-square">
+        <img alt="travis ci build status" src="https://img.shields.io/travis/santospatrick/react-ts-cdk/develop.svg?style=flat-square">
     </span>
     <span>
-<img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+        <img alt="percentage of code coverage by tests" src="https://img.shields.io/codecov/c/github/santospatrick/react-ts-cdk/develop.svg?style=flat-square">
+    </span>
+    <span>
+        <img alt="npm" src="https://img.shields.io/npm/v/npm.svg?style=flat-square">
+    </span>
+    <span>
+        <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
     </span>
 </p>
 
@@ -22,10 +28,10 @@ Components are cool! We should use them everywhere. So, you expent time developi
 ├── src
 |   └── components
 |       └── MyComponent                 # Your component
-|           ├── MyComponent.tsx         # Its JSX + Typescript file
 |           ├── MyComponent.story.tsx   # Storybook of your component
-|           ├── types.tsx               # Types for props
-|           └── tests.js                # Jest + Enzyme tests
+|           ├── MyComponent.test.tsx    # Jest + Enzyme tests
+|           ├── MyComponent.tsx         # Its JSX + Typescript file
+|           └── types.ts                # Types for props
 |       └── MyComponentX                # Another component X
 |       └── MyComponentY                # Another component Y
 |       └── MyComponentZ                # Another component Z
@@ -38,8 +44,8 @@ Components are cool! We should use them everywhere. So, you expent time developi
 - [x] React
 - [x] Typescript
 - [x] Storybook
-- [ ] Jest
-- [ ] Enzyme
+- [x] Jest
+- [x] Enzyme
 - [x] Webpack
 - [x] Prettier
 

@@ -1,9 +1,48 @@
 import { shallow } from "enzyme";
 import React from "react";
+import sinon from "sinon";
 import Clock from "./clock";
 
-test("Title message to be 'Ok!'", () => {
-  const wrap = shallow(<Clock msg="Ok!" />);
+function formatDate(date: Date): string {
+  return (
+    date.getFullYear() +
+    ("0" + (date.getMonth() + 1)).slice(-2) +
+    ("0" + date.getDate()).slice(-2)
+  );
+}
 
-  expect(wrap.find("h1").text()).toEqual("Ok!");
+describe("Props, state & public methods", () => {
+  test("Title message to be 'Ok!'", () => {
+    const wrap: any = shallow(<Clock msg="Ok!" />);
+
+    expect(wrap.find("h1").text()).toEqual("Ok!");
+  });
+
+  test("Tick function set prop 'date' to current date", () => {
+    const wrap: any = shallow(<Clock />);
+    wrap.instance().tick();
+    expect(formatDate(wrap.update().state("date"))).toEqual(
+      formatDate(new Date())
+    );
+  });
+
+  test("handleTick function to execute tick", () => {
+    const wrap: any = shallow(<Clock />);
+    wrap.instance().handleTick();
+    expect(formatDate(wrap.update().state("date"))).toEqual(
+      formatDate(new Date())
+    );
+  });
+});
+
+describe("Life cycle methods", () => {
+  test("componentWillUnmount to be called", () => {
+    const wrap: any = shallow(<Clock />);
+    const willUnmount: sinon.SinonSpy = sinon.spy(
+      Clock.prototype,
+      "componentWillUnmount"
+    );
+    wrap.unmount();
+    expect(willUnmount.callCount).toEqual(1);
+  });
 });
