@@ -38,8 +38,8 @@ Components are cool! We should use them everywhere. So, you expent time developi
 - [x] React
 - [x] Typescript
 - [x] Storybook
-- [ ] Jest
-- [ ] Enzyme
+- [x] Jest
+- [x] Enzyme
 - [x] Webpack
 - [x] Prettier
 
