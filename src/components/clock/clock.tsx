@@ -1,5 +1,4 @@
 import * as React from "react";
-import sinon from "sinon";
 import { IProps, IState } from './types';
 
 export default class Clock extends React.Component<IProps, IState> {
