@@ -8,17 +8,19 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "report-coverage": "cat ./coverage/lcov.info | codecov"
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "lint:tslint": "tslint -c tslint.json 'src/**/*.ts?(x)'",
+    "lint:prettier": "lint-staged",
+    "precommit": "npm-run-all lint:*"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,css,md}": ["prettier --write", "git add"]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/santospatrick/react-ts-cdk.git"
   },
-  "keywords": [
-    "react",
-    "typescript",
-    "cdk"
-  ],
+  "keywords": ["react", "typescript", "cdk"],
   "author": "Patrick Santos (http://santospatrick.github.io/)",
   "license": "MIT",
   "bugs": {
@@ -28,7 +30,6 @@
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.17",
     "@storybook/addon-links": "^3.2.17",
-    "@storybook/react": "^3.2.17",
     "@types/enzyme": "^3.1.6",
     "@types/enzyme-adapter-react-16": "^1.0.1",
     "@types/jest": "^21.1.9",
@@ -38,8 +39,11 @@
     "@types/storybook__react": "^3.0.5",
     "awesome-typescript-loader": "^3.4.1",
     "codecov.io": "^0.1.6",
+    "husky": "^0.14.3",
     "jest": "^22.0.3",
+    "lint-staged": "^6.0.0",
     "lite-server": "^2.3.0",
+    "npm-run-all": "^4.1.2",
     "prettier": "1.9.2",
     "source-map-loader": "^0.2.3",
     "ts-jest": "^22.0.0",
@@ -53,7 +57,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
-    "sinon": "^4.1.3"
+    "sinon": "^4.1.3",
+    "@storybook/react": "^3.2.17"
   },
   "jest": {
     "mapCoverage": true,
@@ -67,20 +72,11 @@
         "statements": 100
       }
     },
-    "setupFiles": [
-      "./setup.ts"
-    ],
+    "setupFiles": ["./setup.ts"],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   }
 }
