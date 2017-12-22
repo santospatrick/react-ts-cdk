@@ -1,12 +1,6 @@
 import * as React from "react";
 import sinon from "sinon";
-
-export interface IProps {
-  msg?: string;
-}
-export interface IState {
-  date: Date;
-}
+import { IProps, IState } from './types';
 
 export default class Clock extends React.Component<IProps, IState> {
   private timeId: any;

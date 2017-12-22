@@ -3,15 +3,13 @@ import React from "react";
 import sinon from "sinon";
 import Clock from "./clock";
 
-type formatDateType = (date: Date) => string;
-const willUnmount: any = sinon.spy(Clock.prototype, 'componentWillUnmount');
-const formatDate: formatDateType = (date: Date): string => {
+function formatDate(date: Date): string {
   return (
     date.getFullYear() +
     ("0" + (date.getMonth() + 1)).slice(-2) +
     ("0" + date.getDate()).slice(-2)
   );
-};
+}
 
 describe("Props, state & public methods", () => {
   test("Title message to be 'Ok!'", () => {
@@ -34,12 +32,16 @@ describe("Props, state & public methods", () => {
     expect(formatDate(wrap.update().state("date"))).toEqual(
       formatDate(new Date())
     );
-  })
+  });
 });
 
 describe("Life cycle methods", () => {
   test("componentWillUnmount to be called", () => {
     const wrap: any = shallow(<Clock />);
+    const willUnmount: sinon.SinonSpy = sinon.spy(
+      Clock.prototype,
+      "componentWillUnmount"
+    );
     wrap.unmount();
     expect(willUnmount.callCount).toEqual(1);
   });
