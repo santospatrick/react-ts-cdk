@@ -40,7 +40,11 @@ schedule(async () => {
           message = `${message}, ${newDependency}`;
         }
       });
-      markdown(`There are new dependencies added in this PR: ${message}`);
+      message(
+        `There are ${
+          newDependencies.lenght
+        } new dependencies added in this PR: ${message}`
+      );
     }
   }
 });
