@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IProps, IState } from './types';
+import { IProps, IState } from "./types";
 
 export default class Clock extends React.Component<IProps, IState> {
   private timeId: any;
@@ -11,6 +11,667 @@ export default class Clock extends React.Component<IProps, IState> {
   }
 
   public componentDidMount(): void {
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+    // tslint:disable-next-line:no-console
+    console.log("test");
+
     this.timeId = setInterval(this.handleTick.bind(this), 1000);
   }
 
