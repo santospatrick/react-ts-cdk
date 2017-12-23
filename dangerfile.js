@@ -1,8 +1,8 @@
 import { message, danger, warn } from "danger";
 
 // Checks if yarn.lock is changed when package.json was modified and vice-versa
-const packageChanged = danger.git.modified_files.includes("package.json");
-const lockfileChanged = danger.git.modified_files.includes("yarn.lock");
+const packageChanged = danger.git.modified_files.indexOf("package.json") !== -1;
+const lockfileChanged = danger.git.modified_files.indexOf("yarn.lock") !== -1;
 if (packageChanged && !lockfileChanged) {
   const message = "Changes were made to package.json, but not to yarn.lock";
   const idea = "Perhaps you need to run `yarn install`?";
