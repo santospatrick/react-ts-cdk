@@ -1,4 +1,5 @@
 import { message, danger, warn } from "danger";
+import includes from "lodash.includes";
 
 // Checks if yarn.lock is changed when package.json was modified and vice-versa
 const packageChanged = includes(danger.git.modified_files, "package.json");

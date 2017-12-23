@@ -20,13 +20,20 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,css,md}": ["prettier --write", "git add"]
+    "*.{ts,tsx,js,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/santospatrick/react-ts-cdk.git"
   },
-  "keywords": ["react", "typescript", "cdk"],
+  "keywords": [
+    "react",
+    "typescript",
+    "cdk"
+  ],
   "author": "Patrick Santos (http://santospatrick.github.io/)",
   "license": "MIT",
   "bugs": {
@@ -64,6 +71,7 @@
     "@storybook/react": "^3.2.17",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "lodash.includes": "^4.3.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
@@ -81,11 +89,20 @@
         "statements": 100
       }
     },
-    "setupFiles": ["./setup.ts"],
+    "setupFiles": [
+      "./setup.ts"
+    ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
