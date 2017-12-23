@@ -29,21 +29,21 @@ if (danger.github.pr.assignee === null) {
 schedule(async () => {
   const packageDiff = await danger.git.JSONDiffForFile("package.json");
   if (packageDiff && packageDiff.dependencies) {
-    let message;
+    let dependenciesString;
     const newDependencies = packageDiff.dependencies.added;
 
     if (newDependencies.length > 0) {
       newDependencies.forEach(newDependency => {
-        if (!message) {
-          message = newDependency;
+        if (!dependenciesString) {
+          dependenciesString = newDependency;
         } else {
-          message = `${message}, ${newDependency}`;
+          dependenciesString = `${dependenciesString}, ${newDependency}`;
         }
       });
       message(
         `There are ${
-          newDependencies.lenght
-        } new dependencies added in this PR: ${message}`
+          newDependencies.length
+        } new dependencies added in this PR: ${dependenciesString}`
       );
     }
   }
