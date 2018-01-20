@@ -60,9 +60,10 @@ Components are cool! We should use them everywhere. So, you expent time developi
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :smile:
+3. Check our [workflow](#workflow) (it will help you understand how you should develop your feature), if you haven't yet.
+4. Commit your changes: `yarn run commit`
+5. Push to the branch: `git push origin my-new-feature`
+6. Submit a pull request :smile:
 
 ## License
 
