@@ -1,37 +1,31 @@
-import * as React from 'react';
-
-export interface IProps {
-  msg?: string;
-}
-export interface IState {
-  date: Date;
-}
-
+import * as React from "react";
+import { IProps, IState } from './types';
 
 export default class Clock extends React.Component<IProps, IState> {
-  timeId: any;
-  constructor(props: IProps){
+  private timeId: any;
+  constructor(props: IProps) {
     super(props);
     this.state = {
-      date: new Date(),
-    }
+      date: new Date()
+    };
   }
 
-  componentDidMount(){
-    this.timeId = setInterval(()=> this.tick(), 1000);
+  public componentDidMount(): void {
+    this.timeId = setInterval(this.handleTick.bind(this), 1000);
   }
-  tick(){
+
+  public tick(): void {
     this.setState({
       date: new Date()
     });
   }
-  componentWillUnmount() {
+  public componentWillUnmount(): void {
     clearInterval(this.timeId);
   }
 
-  render() {
-    const { msg } = this.props;
-    const { date } = this.state;
+  public render(): React.ReactNode {
+    const { msg }: IProps = this.props;
+    const { date }: IState = this.state;
 
     return (
       <div>
@@ -39,5 +33,9 @@ export default class Clock extends React.Component<IProps, IState> {
         <h2>It is {date.toLocaleTimeString()}</h2>
       </div>
     );
+  }
+
+  private handleTick(): void {
+    this.tick();
   }
 }

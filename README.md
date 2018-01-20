@@ -1,11 +1,20 @@
 # react-ts-cdk
 
-<p>
+<p align="center">
     <span>
-    <img alt="npm" src="https://img.shields.io/npm/v/npm.svg?style=flat-square">
+        <img alt="travis ci build status" src="https://img.shields.io/travis/santospatrick/react-ts-cdk/develop.svg?style=flat-square">
     </span>
     <span>
-<img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+        <img alt="percentage of code coverage by tests" src="https://img.shields.io/codecov/c/github/santospatrick/react-ts-cdk/develop.svg?style=flat-square">
+    </span>
+    <span>
+        <img alt="npm" src="https://img.shields.io/npm/v/npm.svg?style=flat-square">
+    </span>
+    <span>
+        <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+    </span>
+    <span>
+        <img alt="commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
     </span>
 </p>
 
@@ -14,18 +23,20 @@
 ![React Typescript Component Development Kit](images/intro.jpg)
 
 ## Motivation
+
 Components are cool! We should use them everywhere. So, you expent time developing a lot of components and now you want to reuse them in another awesome project & all your projects need your components updated when a new feature is released (and you also need typechecking, tests, hot module replacement & all the good stuff).
 
 ## Directory Structure
+
 ```
 .
 ├── src
 |   └── components
 |       └── MyComponent                 # Your component
-|           ├── MyComponent.tsx         # Its JSX + Typescript file
 |           ├── MyComponent.story.tsx   # Storybook of your component
-|           ├── types.tsx               # Types for props
-|           └── tests.js                # Jest + Enzyme tests
+|           ├── MyComponent.test.tsx    # Jest + Enzyme tests
+|           ├── MyComponent.tsx         # Its JSX + Typescript file
+|           └── types.ts                # Types for props
 |       └── MyComponentX                # Another component X
 |       └── MyComponentY                # Another component Y
 |       └── MyComponentZ                # Another component Z
@@ -35,13 +46,15 @@ Components are cool! We should use them everywhere. So, you expent time developi
 ```
 
 ## Features
-- [x] React
-- [x] Typescript
-- [x] Storybook
-- [ ] Jest
-- [ ] Enzyme
-- [x] Webpack
-- [x] Prettier
+
+* [x] React
+* [x] Typescript
+* [x] Storybook
+* [x] Jest
+* [x] Enzyme
+* [x] Webpack
+* [x] Prettier
+* [x] Commitizen
 
 ## Contributing
 

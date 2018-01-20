@@ -1,6 +1,18 @@
 {
-    "extends": [
-        "tslint:latest",
-        "tslint-config-prettier"
-    ]
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration",
+      "object-destructuring",
+      "array-destructuring"
+    ],
+    "max-line-length": [true, 80]
+  }
 }
