@@ -16,6 +16,9 @@
     <span>
         <img alt="commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
     </span>
+    <span>
+        <img alt="semantic release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
+    </span>
 </p>
 
 > 🔥 React + Typescript Boilerplate to develop your own react components and reuse in another projects
