@@ -45,6 +45,30 @@ Components are cool! We should use them everywhere. So, you expent time developi
 |    └── index.js                       # Exporting all Componentss
 ```
 
+## Usage
+
+1. Fork it!
+2. install dependencies:
+
+```
+yarn install
+```
+
+3. Create your account in TravisCI & Code Coverage
+4. Configure TravisCI environment variables `DANGER_GITHUB_API_TOKEN`, `GH_TOKEN` & `NPM_TOKEN` with right permissions (you can find in their websites) for repo access to release new versions & intercept in pull requests
+5. Make sure you have these options checked in TravisCI:
+
+![React Typescript Component Development Kit](images/travisci-options.png)
+
+6. Follow [contributing](#contributing)
+7. in your project, run the following:
+
+```
+yarn add https://github.com/yourusername/react-ts-cdk
+```
+
+8. import your components developed in this repo & use them!
+
 ## Features
 
 * [x] React
