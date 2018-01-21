@@ -86,10 +86,14 @@ yarn add https://github.com/yourusername/react-ts-cdk
 ## Contributing
 
 1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :smile:
+2. install dependencies: `yarn install`
+3. Maybe use storybook to test your component in its final UI version: `yarn run storybook`
+4. If using storybook, then open `localhost:6006` to get a hot module replacement environment to visualize your component after every file saved
+5. Create your feature branch: `git checkout -b my-new-feature`
+6. Check our [workflow](#workflow) (it will help you understand how you should develop your feature), if you haven't yet.
+7. Commit your changes: `yarn run commit`
+8. Push to the branch: `git push origin my-new-feature`
+9. Submit a pull request :smile:
 
 ## License
 
