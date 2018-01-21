@@ -2,10 +2,10 @@
 
 <p align="center">
     <span>
-        <img alt="travis ci build status" src="https://img.shields.io/travis/santospatrick/react-ts-cdk/develop.svg?style=flat-square">
+        <img alt="travis ci build status" src="https://img.shields.io/travis/santospatrick/react-ts-cdk/master.svg?style=flat-square">
     </span>
     <span>
-        <img alt="percentage of code coverage by tests" src="https://img.shields.io/codecov/c/github/santospatrick/react-ts-cdk/develop.svg?style=flat-square">
+        <img alt="percentage of code coverage by tests" src="https://img.shields.io/codecov/c/github/santospatrick/react-ts-cdk/master.svg?style=flat-square">
     </span>
     <span>
         <img alt="npm" src="https://img.shields.io/npm/v/npm.svg?style=flat-square">
@@ -82,6 +82,12 @@ yarn add https://github.com/yourusername/react-ts-cdk
 * [x] Webpack
 * [x] Prettier
 * [x] Commitizen
+
+## Workflow
+
+[See presentation](http://slides.com/santospatrick/react-typescript-cdk/fullscreen)
+
+![Repository Workflow](images/workflow.png)
 
 ## Contributing
 
