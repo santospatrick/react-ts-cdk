@@ -5,7 +5,7 @@ const path = require("path");
 const ts = require("typescript");
 
 const log = console.log;
-const logErro = string => log(chalk.red(string));
+const logError = string => log(chalk.red(string));
 const logInfo = string => log(chalk.blue(string));
 
 const resolveRoot = dir => path.resolve(__dirname, "..", dir);
@@ -54,14 +54,14 @@ const createES6Index = async () => {
 const buildTs = () => {
   logInfo("Building typescript files...");
   const build = spawn("tsc");
-  build.stdout.on("erro", error => {
-    logErro(error);
-    process.exit(1);
-  });
-  build.stdout.on("data", logInfo);
-  build.on("exit", () => {
-    logInfo("Typescript build ends with success!");
-    copyFilesToBuild();
+  build.stdout.on("data", logError);
+  build.on("exit", code => {
+    if (code === 0) {
+      logInfo("Typescript build ends with success!");
+      copyFilesToBuild();
+    } else {
+      logError("Typescript build failed");
+    }
   });
 };
 
