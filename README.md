@@ -39,7 +39,7 @@ Components are cool! We should use them everywhere. So, you expent time developi
 |           ├── MyComponent.story.tsx   # Storybook of your component
 |           ├── MyComponent.test.tsx    # Jest + Enzyme tests
 |           ├── MyComponent.tsx         # Its JSX + Typescript file
-|           └── types.ts                # Types for props
+|           └── MyComponent.types.ts                # Types for props
 |       └── MyComponentX                # Another component X
 |       └── MyComponentY                # Another component Y
 |       └── MyComponentZ                # Another component Z
