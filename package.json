@@ -26,7 +26,8 @@
       {
         "path": "@semantic-release/npm",
         "pkgRoot": "dist"
-      }
+      },
+      "@semantic-release/git"
     ]
   },
   "lint-staged": {
