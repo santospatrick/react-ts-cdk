@@ -1,7 +1,7 @@
 import { shallow } from "enzyme";
 import React from "react";
 import sinon from "sinon";
-import Clock from "./clock";
+import Clock from "./Clock";
 
 function formatDate(date: Date): string {
   return (
