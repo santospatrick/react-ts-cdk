@@ -32,8 +32,9 @@ schedule(async () => {
   if (packageDiff && packageDiff.dependencies) {
     let dependenciesString;
     const newDependencies = packageDiff.dependencies.added;
+    const newCount = newDependencies.length;
 
-    if (newDependencies.length > 0) {
+    if (newCount > 0) {
       newDependencies.forEach(newDependency => {
         if (!dependenciesString) {
           dependenciesString = newDependency;
@@ -42,9 +43,9 @@ schedule(async () => {
         }
       });
       message(
-        `There are ${newDependencies.length} new ${
-          newDependencies.length === 1 ? "dependency" : "dependencies"
-        } added in this PR: ${dependenciesString}`
+        `There ${newCount === 1 ? "is" : "are"} ${newCount} new ${
+          newCount === 1 ? "dependency" : "dependencies"
+        } added in this PR: ${dependenciesString}.`
       );
     }
   }
@@ -68,7 +69,7 @@ schedule(async () => {
       message(
         `There is ${removedDependencies.length} removed ${
           removedDependencies.length === 1 ? "dependency" : "dependencies"
-        } in this PR: ${dependenciesString}`
+        } in this PR: ${dependenciesString}.`
       );
     }
   }
@@ -102,11 +103,11 @@ schedule(async () => {
           updatedString = `${updatedString}, ${updatedDependency}`;
         }
       });
-      message(`The version of ${updatedDependencies.length} 
-      ${
-        updatedDependencies.length === 1 ? "dependency" : "dependencies"
-      } have been updated in this PR: 
-      ${updatedString}`);
+      message(
+        `The version of ${updatedDependencies.length} ${
+          updatedDependencies.length === 1 ? "dependency" : "dependencies"
+        } have been updated in this PR: ${updatedString}.`
+      );
     }
   }
 });
@@ -129,7 +130,7 @@ schedule(async () => {
       message(
         `There are ${newDevDependencies.length} new dev${
           newDevDependencies.length === 1 ? "Dependency" : "Dependencies"
-        } added in this PR: ${devDependenciesString}`
+        } added in this PR: ${devDependenciesString}.`
       );
     }
   }
@@ -141,19 +142,22 @@ schedule(async () => {
   if (packageDiff && packageDiff.devDependencies) {
     let devDependenciesString;
     const removedDevDependencies = packageDiff.devDependencies.removed;
+    const removedCount = removedDevDependencies.length;
 
-    if (removedDevDependencies.length > 0) {
-      removedDevDependencies.forEach(newDevDependency => {
+    if (removedCount > 0) {
+      removedDevDependencies.forEach(removedDevDependency => {
         if (!devDependenciesString) {
-          devDependenciesString = newDevDependency;
+          devDependenciesString = removedDevDependency;
         } else {
-          devDependenciesString = `${devDependenciesString}, ${newDevDependency}`;
+          devDependenciesString = `${devDependenciesString}, ${removedDevDependency}`;
         }
       });
       message(
-        `There is ${removedDevDependencies.length} removed dev${
-          removedDevDependencies.length === 1 ? "Dependency" : "Dependencies"
-        } in this PR: ${devDependenciesString}`
+        `There ${
+          removedCount === 1 ? "is" : "are"
+        } ${removedCount} removed dev${
+          removedCount === 1 ? "Dependency" : "Dependencies"
+        } in this PR: ${devDependenciesString}.`
       );
     }
   }
@@ -187,11 +191,11 @@ schedule(async () => {
           updatedString = `${updatedString}, ${updatedDependency}`;
         }
       });
-      message(`The version of ${updatedDependencies.length} dev
-      ${
-        updatedDependencies.length === 1 ? "Dependency" : "Dependencies"
-      } have been updated in this PR: 
-      ${updatedString}`);
+      message(
+        `The version of ${updatedDependencies.length} dev${
+          updatedDependencies.length === 1 ? "Dependency" : "Dependencies"
+        } have been updated in this PR: ${updatedString}.`
+      );
     }
   }
 });
