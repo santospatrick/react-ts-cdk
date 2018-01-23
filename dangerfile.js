@@ -1,5 +1,9 @@
 import { message, danger, warn } from "danger";
 
+const removeAtSymbols = string => {
+  return string.replace(/@/g, "");
+};
+
 // Checks if yarn.lock is changed when package.json was modified and vice-versa
 const packageChanged = danger.git.modified_files.includes("package.json");
 const lockfileChanged = danger.git.modified_files.includes("yarn.lock");
@@ -45,7 +49,7 @@ schedule(async () => {
       message(
         `There ${newCount === 1 ? "is" : "are"} ${newCount} new ${
           newCount === 1 ? "dependency" : "dependencies"
-        } added in this PR: ${dependenciesString}.`
+        } added in this PR: ${removeAtSymbols(dependenciesString)}.`
       );
     }
   }
@@ -69,7 +73,7 @@ schedule(async () => {
       message(
         `There is ${removedDependencies.length} removed ${
           removedDependencies.length === 1 ? "dependency" : "dependencies"
-        } in this PR: ${dependenciesString}.`
+        } in this PR: ${removeAtSymbols(dependenciesString)}.`
       );
     }
   }
@@ -106,7 +110,7 @@ schedule(async () => {
       message(
         `The version of ${updatedDependencies.length} ${
           updatedDependencies.length === 1 ? "dependency" : "dependencies"
-        } have been updated in this PR: ${updatedString}.`
+        } have been updated in this PR: ${removeAtSymbols(updatedString)}.`
       );
     }
   }
@@ -131,7 +135,7 @@ schedule(async () => {
       message(
         `There ${newCount === 1 ? "is" : "are"} ${newCount} new dev${
           newCount === 1 ? "Dependency" : "Dependencies"
-        } added in this PR: ${devDependenciesString}.`
+        } added in this PR: ${removeAtSymbols(devDependenciesString)}.`
       );
     }
   }
@@ -158,7 +162,7 @@ schedule(async () => {
           removedCount === 1 ? "is" : "are"
         } ${removedCount} removed dev${
           removedCount === 1 ? "Dependency" : "Dependencies"
-        } in this PR: ${devDependenciesString}.`
+        } in this PR: ${removeAtSymbols(devDependenciesString)}.`
       );
     }
   }
@@ -195,7 +199,7 @@ schedule(async () => {
       message(
         `The version of ${updatedDependencies.length} dev${
           updatedDependencies.length === 1 ? "Dependency" : "Dependencies"
-        } have been updated in this PR: ${updatedString}.`
+        } have been updated in this PR: ${removeAtSymbols(updatedString)}.`
       );
     }
   }
