@@ -2,22 +2,28 @@
 
 <p align="center">
     <span>
+        <img alt="license MIT" src="https://img.shields.io/github/license/santospatrick/react-ts-cdk.svg?style=flat-square">
+    </span>
+    <span>
+        <img alt="latest release" src="https://img.shields.io/github/release/santospatrick/react-ts-cdk/all.svg?style=flat-square">
+    </span>
+    <span>
         <img alt="travis ci build status" src="https://img.shields.io/travis/santospatrick/react-ts-cdk/master.svg?style=flat-square">
     </span>
     <span>
         <img alt="percentage of code coverage by tests" src="https://img.shields.io/codecov/c/github/santospatrick/react-ts-cdk/master.svg?style=flat-square">
     </span>
     <span>
-        <img alt="npm" src="https://img.shields.io/npm/v/npm.svg?style=flat-square">
+        <img alt="minimum node version" src="https://img.shields.io/node/v/react-ts-cdk.svg?style=flat-square">
     </span>
     <span>
         <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
     </span>
     <span>
-        <img alt="commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
+        <img alt="commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
     </span>
     <span>
-        <img alt="semantic release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
+        <img alt="semantic release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square">
     </span>
 </p>
 
