@@ -118,8 +118,9 @@ schedule(async () => {
   if (packageDiff && packageDiff.devDependencies) {
     let devDependenciesString;
     const newDevDependencies = packageDiff.devDependencies.added;
+    const newCount = newDevDependencies.length;
 
-    if (newDevDependencies.length > 0) {
+    if (newCount > 0) {
       newDevDependencies.forEach(newDevDependency => {
         if (!devDependenciesString) {
           devDependenciesString = newDevDependency;
@@ -128,8 +129,8 @@ schedule(async () => {
         }
       });
       message(
-        `There are ${newDevDependencies.length} new dev${
-          newDevDependencies.length === 1 ? "Dependency" : "Dependencies"
+        `There ${newCount === 1 ? "is" : "are"} ${newCount} new dev${
+          newCount === 1 ? "Dependency" : "Dependencies"
         } added in this PR: ${devDependenciesString}.`
       );
     }
@@ -143,6 +144,8 @@ schedule(async () => {
     let devDependenciesString;
     const removedDevDependencies = packageDiff.devDependencies.removed;
     const removedCount = removedDevDependencies.length;
+
+    console.log(removedDevDependencies);
 
     if (removedCount > 0) {
       removedDevDependencies.forEach(removedDevDependency => {
