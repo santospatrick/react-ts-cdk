@@ -145,8 +145,6 @@ schedule(async () => {
     const removedDevDependencies = packageDiff.devDependencies.removed;
     const removedCount = removedDevDependencies.length;
 
-    console.log(removedDevDependencies);
-
     if (removedCount > 0) {
       removedDevDependencies.forEach(removedDevDependency => {
         if (!devDependenciesString) {
